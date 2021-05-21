@@ -186,8 +186,11 @@ No known bugs at this time.
 
 ## Authors
 Jhon Alex Freyre N. - [Github](https://github.com/Jhonalex1199) / [Twitter](https://twitter.com/Jhonf_2c)  
+
 Estephania Calvo C. - [Github](https://github.com/EstephaniaCalvoC) / [Twitter](https://twitter.com/estephaniacalv2)
+
 David Alzate - [Github](https://github.com/illker) / [Twitter](https://twitter.com/illker)
+
 Juan Manuel Ramirez - [Github](https://github.com/Juan8bits) / [Twitter](https://twitter.com/Juan_8bits)
 
 ## License
