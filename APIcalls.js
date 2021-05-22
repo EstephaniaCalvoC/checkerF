@@ -1,7 +1,7 @@
 const HBurl = "https://intranet.hbtn.io";
 const fetch = require('node-fetch');
 const execSync = require('child_process').execSync;
-const axios = require('axios');
+//const axios = require('axios');
 const fs = require('fs');
 
 
@@ -65,9 +65,11 @@ const correctionRequest = async (taskId, authToken) => {
   return data.id
 };
 
-const getResult =  () => {
+const getResult = () => {
   // command = `./results.py ${dataId} ${authToken}`;
-  command = `./results.py > results.json`;
+ 
+  command = `./results.py ${url} > results.json`;
+  console.log(command)
   execSync(command, { encoding: 'utf-8' });
   fs.readFile("./results.json", 'utf8', (err, data) => {
   if (err) {
@@ -126,11 +128,13 @@ async function main () {
   "scope": "checker"}
   const authToken = await getToken(userInfo);
   const project = await getProject('333', authToken);
-  const checkID = await correctionRequest('2550', authToken);
+  const checkID = await correctionRequest('2551', authToken);
   
   console.log(checkID)
+  const nose=checkID.toString()
   // getResult('2550', authToken)
-  getResult()
+  let url = `${HBurl}/correction_requests/${checkID}.json?auth_token=${authToken}`;
+  getResult(url)
   // console.log(await getResult(checkID, authToken))
 
 
