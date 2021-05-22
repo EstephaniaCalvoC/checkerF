@@ -1,0 +1,2 @@
+
+{"user_id":2177,"full_name":"Estephania Carvajal","auth_token":"98e5a6227bae636382b786a86085fe7b9391c9fbeb3f654b8e548cf23f2f7923","expiration_date":"05/22/2021 09:03:49","scope":"checker"}

@@ -1,0 +1,25 @@
+{
+  "name": "checkerf",
+  "version": "1.0.0",
+  "description": "Script to check Holberton task from your Terminal",
+  "main": "APIcalls.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstephaniaCalvoC/checkerF.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EstephaniaCalvoC/checkerF/issues"
+  },
+  "homepage": "https://github.com/EstephaniaCalvoC/checkerF#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
