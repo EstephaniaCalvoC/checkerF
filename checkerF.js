@@ -68,8 +68,6 @@ const correctionRequest = async(taskId, authToken) => {
 const getResult = async(dataId, authToken, taskTitle) => {
     url = `${HBurl}/correction_requests/${dataId}.json?auth_token=${authToken}`;
     console.log("\n");
-    console.log(dataId);
-    console.log(url);
     console.log(taskTitle.bgBlue + ", ".bgBlue + "Results:".bgBlue);
     let response = await fetch(url, {
         method: "GET",
@@ -111,6 +109,7 @@ async function main() {
         password: process.env.HBTON_PWD,
         scope: "checker",
     };
+
     const authToken = await getToken(userInfo);
     const project = await getProject(projectId, authToken);
     const burger = project.tasks;
