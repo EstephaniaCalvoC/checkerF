@@ -45,4 +45,3 @@ echo export HBTON_PWD="${passw}">>~/.bashrc
 echo "Saving API key..."
 echo export HBTON_APIKEY="${api_k}">>~/.bashrc
 npm install
-
